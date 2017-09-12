@@ -14,8 +14,8 @@ namespace TwilioApp.Backend.Twilio.Libraries
         public static readonly Lazy<string> AuthToken = new Lazy<string>(() => System.Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN"));
 
         public static readonly Lazy<string> DefaultPhoneNumber = new Lazy<string>(() => System.Environment.GetEnvironmentVariable("TWILIO_DEFAULT_PHONE_NUMBER"));
-        
-        public static MessageResource SendSms(string toPhoneNumber, string message, string fromPhoneNumber)
+
+        public static MessageResource SendSms(string toPhoneNumber, string message, string fromPhoneNumber = null)
         {
             if (fromPhoneNumber is null)
             {
