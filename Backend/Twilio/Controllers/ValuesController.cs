@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace TwilioApp.Backend.Controllers
+namespace TwilioApp.Backend.Twilio.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/twilio/[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values
